@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>What the commit | Ukraine Donations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Dashboard for official crypto donations to Ukraine">
+    <link rel="stylesheet" href="https://what-the-commit.com/css/bulma/bulma.min.css">
+    <link rel="icon" type="image/svg+xml" href="https://what-the-commit.com/bulma-plain-assets/logos/robot_light_grey.svg">
+
+    <style>
+        .has-text-grey a {
+            color: #7a7a7a;
+        }
+
+        .has-text-grey a:hover {
+            color: #363636;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBV39WC2P5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DBV39WC2P5');
+    </script>
+</head>
+
+<body>
+<div>
+    <section class="section pt-0">
+        <nav class="container pt-5">
+            <div class="navbar-brand" style="position: relative;left: -20px;">
+                <object type="image/svg+xml" data="https://what-the-commit.com/bulma-plain-assets/logos/robot_light_grey.svg" width="80">
+                    WTC Logo
+                    <!-- fallback image in CSS -->
+                </object>
+                <h1 class="title has-text-weight-bold">
+                    <a href="https://what-the-commit.com" style="color:#363636;" target="_blank">What The Commit</a>
+                    | <a href="https://ukraine.what-the-commit.com" style="color:#363636;">Ukraine Donations</a>
+                </h1>
+            </div>
+
+        </nav>
+        <div class="container pt-5">
+            <div class="mb-5 columns is-multiline">
+                <div class="column is-12 is-12-desktop mb-5 mt-5">
+                    <blockquote class="twitter-tweet" style="display: none;"><p lang="en" dir="ltr">Stand with the people of Ukraine. Now accepting cryptocurrency donations. Bitcoin, Ethereum and USDT.<br><br>BTC - 357a3So9CbsNfBBgFYACGvxxS6tMaDoa1P<br><br>ETH and USDT (ERC-20) - 0x165CD37b4C644C2921454429E7F9358d18A45e14</p>&mdash; Ukraine / Україна (@Ukraine) <a href="https://twitter.com/Ukraine/status/1497594592438497282?ref_src=twsrc%5Etfw">February 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <h2 class="title has-text-weight-bold">Donations</h2>
+                    <h2 class="title has-text-weight-bold">ETH: <span id="eth-value"></span> Ξ (<span id="eth-usd-value"></span>)</h2>
+                    <h2 class="title has-text-weight-bold">DOT: <span id="dot-value"></span> DOT (<span id="dot-usd-value"></span>)</h2>
+                    <h2 class="title has-text-weight-bold">BTC: <span id="btc-value"></span> ₿ (<span id="btc-usd-value"></span>)</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="section">
+        <div class="container">
+            <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
+                <div class="mr-auto mb-2">
+                    <a class="navbar-item pl-0" href="#">
+                        <object type="image/svg+xml" data="https://what-the-commit.com/bulma-plain-assets/logos/robot_light_grey.svg" width="80"
+                                style="position: relative;
+    left: -20px;">
+                            WTC Logo
+                            <!-- fallback image in CSS -->
+                        </object>
+                        <h1 class="title has-text-weight-bold">What the commit</h1>
+                    </a>
+                </div>
+                <div>
+                    <ul class="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+                        <li class="mr-4">
+                        <li class="mr-4">
+                        <li class="mr-4">
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pt-5" style="border-top: 1px solid #dee2e6;"></div>
+        <div class="container">
+            <div class="is-flex-tablet is-justify-content-between is-align-items-center">
+                <p>All rights reserved © What The Commit by Kevin Mauel<a style="top: 5px;
+    position: relative;" href="https://twitter.com/bavragor94" target="_blank">
+                    <img src="https://what-the-commit.com/bulma-plain-assets/socials/twitter.svg" alt=""></a><a style="top: 5px;
+    position: relative;" href="https://www.linkedin.com/in/kevin-mauel-656997134/" target="_blank">
+                    <img src="https://what-the-commit.com/bulma-plain-assets/socials/linkedin.svg" alt=""></a><br /><br />
+                    Made with ♥ by <a href="https://what-the-commit.com/" class="text-white">What The Commit</a> (<a
+                            href="https://twitter.com/bavragor94" class="text-white">tony-stark.eth</a>) for the Crypto and NFT community
+                    <br />
+                    <br />
+                    For supporting my projects and keep them running, feel free to tip <b>tony-stark.eth</b>
+                </p>
+                <p>
+
+                </p>
+                <div class="py-2 is-hidden-tablet"></div>
+                <div class="ml-auto" style="position: absolute; top:0; right:0;">
+
+                    <a class="mr-4 is-inline-block" href="https://twitter.com/wtc_nft" target="_blank">
+                        <img src="https://what-the-commit.com/bulma-plain-assets/socials/twitter.svg" alt=""></a>
+                    <a class="mr-4 is-inline-block" href="https://discord.com/invite/pertRZCmmP" target="_blank">
+                        <img src="https://what-the-commit.com/bulma-plain-assets/logos/discord_black.svg" alt="" width="28"></a>
+                    <a class="mr-4 is-inline-block" href="https://opensea.io/collection/what-the-commit"
+                       target="_blank">
+                        <img src="https://what-the-commit.com/bulma-plain-assets/socials/opensea.svg" alt="" width="24"></a>
+                    <a class="mr-4 is-inline-block" href="https://github.com/What-The-Commit/ukraine-crypto-donations"
+                       target="_blank">
+                        <img src="https://what-the-commit.com/bulma-plain-assets/socials/github.svg" alt=""></a>
+                    <a class="mr-4 is-inline-block" href="#">
+                    </a>
+                    <a class="is-inline-block" href="#">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    window.addEventListener("load", async function() {
+        setTimeout(function () {
+            for (const tweet of document.getElementsByClassName('twitter-tweet')) {
+                tweet.style.display = 'block';
+            }
+        }, 1000);
+
+        const response = await fetch('balance.json');
+        const data = await response.json();
+
+        console.log(data);
+
+        const localStringOptions = { style: 'currency', currency: 'USD' };
+
+        document.getElementById('eth-value').innerText = parseFloat(data.eth.native).toLocaleString();
+        document.getElementById('eth-usd-value').innerText = data.eth.usd.toLocaleString(undefined, localStringOptions);
+
+        document.getElementById('dot-value').innerText = data.dot.native.toLocaleString();
+        document.getElementById('dot-usd-value').innerText = data.dot.usd.toLocaleString(undefined, localStringOptions);
+
+        document.getElementById('btc-value').innerText = data.btc.native.toLocaleString();
+        document.getElementById('btc-usd-value').innerText = data.btc.usd.toLocaleString(undefined, localStringOptions);
+    });
+</script>
+</body>
+</html>
