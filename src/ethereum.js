@@ -46,8 +46,16 @@ class Ethereum {
             console.log(response.data.pagination);
 
             for (const item of response.data.items) {
-                if (ethers.utils.getAddress(item.to_address) !== this.address) {
-                    continue;
+                try {
+                    if (ethers.utils.getAddress(item.to_address) !== this.address) {
+                        continue;
+                    }
+                } catch (error) {
+                    if (error.reason === 'invalid address') {
+                        continue;
+                    }
+
+                    throw error;
                 }
 
                 if (item.log_events.length > 0) {
