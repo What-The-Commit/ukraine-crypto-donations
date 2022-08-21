@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Dashboard for official crypto donations to Ukraine">
-    <link rel="stylesheet" href="https://what-the-commit.com/css/bulma/bulma.min.css">
-    <link rel="icon" type="image/svg+xml" href="https://what-the-commit.com/bulma-plain-assets/logos/robot_light_grey.svg">
+    <link rel="stylesheet" href="assets/css/bulma/bulma.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/bulma-plain-assets/logos/robot_light_grey.svg">
 
     <style>
         .has-text-grey a {
@@ -35,7 +35,7 @@
     <section class="section pt-0">
         <nav class="container pt-5">
             <div class="navbar-brand" style="position: relative;left: -20px;">
-                <object type="image/svg+xml" data="https://what-the-commit.com/bulma-plain-assets/logos/robot_light_grey.svg" width="80">
+                <object type="image/svg+xml" data="assets/bulma-plain-assets/logos/robot_light_grey.svg" width="80">
                     WTC Logo
                     <!-- fallback image in CSS -->
                 </object>
@@ -68,7 +68,7 @@
             <div class="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
                 <div class="mr-auto mb-2">
                     <a class="navbar-item pl-0" href="#">
-                        <object type="image/svg+xml" data="https://what-the-commit.com/bulma-plain-assets/logos/robot_light_grey.svg" width="80"
+                        <object type="image/svg+xml" data="assets/bulma-plain-assets/logos/robot_light_grey.svg" width="80"
                                 style="position: relative;
     left: -20px;">
                             WTC Logo
@@ -92,9 +92,9 @@
             <div class="is-flex-tablet is-justify-content-between is-align-items-center">
                 <p>All rights reserved © What The Commit by Kevin Mauel<a style="top: 5px;
     position: relative;" href="https://twitter.com/bavragor94" target="_blank">
-                    <img src="https://what-the-commit.com/bulma-plain-assets/socials/twitter.svg" alt=""></a><a style="top: 5px;
+                    <img src="assets/bulma-plain-assets/socials/twitter.svg" alt=""></a><a style="top: 5px;
     position: relative;" href="https://www.linkedin.com/in/kevin-mauel-656997134/" target="_blank">
-                    <img src="https://what-the-commit.com/bulma-plain-assets/socials/linkedin.svg" alt=""></a><br /><br />
+                    <img src="assets/bulma-plain-assets/socials/linkedin.svg" alt=""></a><br /><br />
                     Made with ♥ by <a href="https://what-the-commit.com/" class="text-white">What The Commit</a> (<a
                             href="https://twitter.com/bavragor94" class="text-white">tony-stark.eth</a>) for the Crypto and NFT community
                     <br />
@@ -108,7 +108,7 @@
                 <div class="ml-auto" style="position: absolute; top:0; right:0;">
                     <a class="mr-4 is-inline-block" href="https://github.com/What-The-Commit/ukraine-crypto-donations"
                        target="_blank">
-                        <img src="https://what-the-commit.com/bulma-plain-assets/socials/github.svg" alt=""></a>
+                        <img src="assets/bulma-plain-assets/socials/github.svg" alt=""></a>
                     <a class="mr-4 is-inline-block" href="#">
                     </a>
                     <a class="is-inline-block" href="#">
@@ -127,10 +127,8 @@
             }
         }, 1000);
 
-        const response = await fetch('balance.json');
+        const response = await fetch('/api');
         const data = await response.json();
-
-        console.log(data);
 
         const localStringOptions = { style: 'currency', currency: 'USD' };
 
